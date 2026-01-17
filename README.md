@@ -101,4 +101,21 @@ Note: When running via Docker, the app connects to the postgres service name. Fo
     - Backend architecture design and Docker configuration.
     - Frontend logic structuring and documentation drafting.
 
+## Live Deployment (AWS EC2)
+
+    The Crypto Sentinel application is currently deployed on an AWS EC2 instance and accessible at:
+
+    http://16.170.241.154:3000/
+
+    This deployment demonstrates the complete end-to-end functionality, including:
+        - Backend API
+        - Background price monitoring worker
+        - PostgreSQL database
+        - Frontend UI
+
+    ⚠️ **Note:**  
+    This EC2 instance is running for demonstration purposes only and **may be stopped soon to avoid unnecessary cloud costs**.  
+    If the URL is not accessible, please refer to the source code and Docker-based setup instructions in this repository to run the application locally or redeploy it on your own infrastructure.
+
+
 ## Author: Rohithparthiban K, Software Engineer
