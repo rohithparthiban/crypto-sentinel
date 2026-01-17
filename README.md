@@ -53,7 +53,7 @@ Note: When running via Docker, the app connects to the postgres service name. Fo
 
 ## 🚀 Getting Started
 
-Running Locally
+# Running Locally
     1. Install Dependencies:
         npm install
     2. Database Setup: Ensure PostgreSQL is running and create the necessary tables using the init.sql script found in the /database folder.
@@ -61,13 +61,13 @@ Running Locally
         npm run dev
     4. Access the app at: http://localhost:3000
 
-Running with Docker Compose:
+# Running with Docker Compose:
     1. Build and Launch:
         docker compose up --build
     2. Database Setup: Ensure the necessary tables using the init.sql script found in the /database folder.
     3. Access the App: The application will be live at http://localhost:3000.
 
-Running Tests:
+# Running Tests:
     1. This project includes unit and integration tests to validate API endpoints and alert-triggering logic.
     2. Run all tests using:
         npm test
