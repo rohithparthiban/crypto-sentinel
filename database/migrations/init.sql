@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS price_alerts (
+    id SERIAL PRIMARY KEY,
+    coin VARCHAR(50) NOT NULL,
+    target_price NUMERIC NOT NULL,
+    condition VARCHAR(10) CHECK (condition IN ('ABOVE', 'BELOW')) NOT NULL,
+    status VARCHAR(15) DEFAULT 'ACTIVE',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
