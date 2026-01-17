@@ -35,8 +35,9 @@ crypto-sentinel/
 ├── package.json
 └── README.md
 
+```
 
-⚙️ Configuration
+## ⚙️ Configuration
 
 Create a .env file in the project root directory:
 
@@ -50,7 +51,7 @@ Create a .env file in the project root directory:
 
 Note: When running via Docker, the app connects to the postgres service name. For local development, ensure your local PostgreSQL instance is running on localhost.
 
-🚀 Getting Started
+## 🚀 Getting Started
 
 Running Locally
     1. Install Dependencies:
@@ -71,7 +72,7 @@ Running Tests:
     2. Run all tests using:
         npm test
 
-🧠 Alert Logic & Features
+## 🧠 Alert Logic & Features
 
     ## Trigger Logic
         - Condition ABOVE: Triggers when the current market price exceeds the user's target price.
@@ -89,15 +90,15 @@ Running Tests:
         Example log output:
             ALERT TRIGGERED: BITCOIN at $65234.12
 
-# Key Features
+## Key Features
     - RESTful API: Robust endpoints for managing price alerts.
     - Automated Monitoring: Background worker ensures 24/7 price tracking.
     - Persistent Storage: Data remains secure in a PostgreSQL database.
     - Interactive UI: A clean Bootstrap-based interface to create, view, reset, and delete alerts.
 
-🤖 AI Disclosure
+## 🤖 AI Disclosure
     - AI tools were utilized during development to assist with:
     - Backend architecture design and Docker configuration.
     - Frontend logic structuring and documentation drafting.
 
-Author: Rohithparthiban K, Software Engineer
+## Author: Rohithparthiban K, Software Engineer
