@@ -57,6 +57,7 @@ Note: When running via Docker, the app connects to the postgres service name. Fo
     1. Install Dependencies:
         npm install
     2. Database Setup: Ensure PostgreSQL is running and create the necessary tables using the init.sql script found in the /database folder.
+        psql -U crypto_user -d crypto_sentinel -f database/migrations/init.sql
     3. Start the Application:
         npm run dev
     4. Access the app at: http://localhost:3000
@@ -65,6 +66,8 @@ Note: When running via Docker, the app connects to the postgres service name. Fo
     1. Build and Launch:
         docker compose up --build
     2. Database Setup: Ensure the necessary tables using the init.sql script found in the /database folder.
+        docker exec -i crypto-sentinel-db \
+        psql -U crypto_user -d crypto_sentinel < database/migrations/init.sql
     3. Access the App: The application will be live at http://localhost:3000.
 
 # Running Tests:
